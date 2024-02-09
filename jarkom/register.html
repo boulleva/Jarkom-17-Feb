@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register/Login Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+      }
+      form {
+        margin-top: 20px;
+      }
+      input[type="text"],
+      input[type="password"],
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+      .login-link {
+        text-align: center;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Register</h2>
+      <form action="#" method="post">
+        <input type="text" name="username" placeholder="Username" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <input type="submit" value="Register" />
+      </form>
+      <div class="login-link">
+        Already have an account?
+        <a href="register dan loggn.html">Login here</a>
+      </div>
+    </div>
+
+    <div class="container" id="login" style="display: none">
+      <h2>Login</h2>
+      <form action="#" method="post">
+        <input type="text" name="username" placeholder="Username" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <input type="submit" value="Login" />
+      </form>
+      <div class="login-link">
+        Don't have an account yet? <a href="#">Register here</a>
+      </div>
+    </div>
+
+    <script>
+      // Toggle between register and login forms
+      document
+        .querySelector(".login-link a")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          document.getElementById("login").style.display = "block";
+          document.querySelector(".container:first-of-type").style.display =
+            "none";
+        });
+
+      document
+        .querySelector(".login-link:last-of-type a")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          document.getElementById("login").style.display = "none";
+          document.querySelector(".container:first-of-type").style.display =
+            "block";
+        });
+    </script>
+  </body>
+</html>

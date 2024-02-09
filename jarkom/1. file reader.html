@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAHGUE - Share & Vote Memes</title>
+    <link rel="stylesheet" href="1. css file reader.css" />
+  </head>
+  <body>
+    <header>
+      <h1>LAHGUE</h1>
+      <div id="login">
+        <a href="#" class="btn">Login Google</a>
+      </div>
+    </header>
+    <main>
+      <section id="trending">
+        <h2>Hot Fresh ✔ Trending Memes</h2>
+        <div id="hot-memes">
+          <!-- Meme posts will be populated here by JavaScript -->
+        </div>
+        <div id="profile">
+            <a href="profile.html"></a> <img
+            src="D:\file coding\jarkom\profile png.jpg"
+            height="300"
+            alt="Profile Picture" 
+          />
+          <h1><marquee>A NEW UPDATE MEMES!</h1></marquee>
+          <p>short bio tentang website ini</p>
+        </div>
+      </section>
+      <section id="meme-creator">
+        <h2>Mau ngepost meme kamu sendiri?</h2>
+        <form id="meme-form">
+          <input type="file" id="meme-image" accept="image/*" required />
+          <textarea
+            id="meme-caption"
+            placeholder="Kasih tau meme kalian itu tentang apa"
+            rows="4"
+          ></textarea>
+          <button type="submit">Upload Meme</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; LAHGUE</p>
+    </footer>
+    <script src="1. js filereader.js"></script>
+  </body>
+</html>

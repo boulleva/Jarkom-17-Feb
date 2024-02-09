@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: rgb(9, 156, 156);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 121, 120, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  background: #1e90ff;
+  width: 160px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.upload-meme {
+  margin-top: 50px;
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+input[type="file"] {
+  margin-bottom: 20px;
+}
+button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.trending-memes {
+  margin-top: 50px;
+  text-align: left;
+}
+.meme-item {
+  margin-bottom: 30px;
+}
+.meme-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+#fileInput {
+  margin: 20px;
+}
+
+#output {
+  margin: 20px;
+}
